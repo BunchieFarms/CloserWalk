@@ -1,0 +1,17 @@
+@import "bootstrap";
+
+body {
+    font-family: Ubuntu, sans-serif;
+}
+
+#dskHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5% 1% 5%;
+    height: 20%;
+}
+
+.links {
+    padding-top: 1.1%;
+    font-size: 20pt;
+}

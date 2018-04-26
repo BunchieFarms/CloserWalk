@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Closerwalk</title>
-    <%= csrf_meta_tags %>
-
+    <title>Closer Walk UMC</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div id="top"></div>
+    <div id="dskHeader">
+      <div id="logo"><%= link_to image_tag("cwLogo.png"), root_path %></div>
+      <div class="links"><%= link_to "Home", root_path(anchor: "top") %></div>
+      <div class="links"><%= link_to "About Us", root_path(anchor: "about") %></div>
+      <div class="links"><%= link_to "Our Beliefs", root_path(anchor: "beliefs") %></div>
+      <div class="links">Sermons</div>
+      <div class="links">Events</div>
+      <div class="links">Our Ministries</div>
+      <div class="links">More</div>
+    </div>
+
     <%= yield %>
   </body>
 </html>
