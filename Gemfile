@@ -7,7 +7,6 @@ end
 
 gem 'jquery-rails'
 
-gem 'bootstrap', '~> 4.1.0'
 gem 'devise'
 gem 'rails', '~> 5.1.5'
 gem 'pg'
