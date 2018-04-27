@@ -1,15 +1,26 @@
-body {
+html, body {
     font-family: Ubuntu, sans-serif;
+    height: 100%;
+    margin: 0;
 }
 
 #dskHeader {
     display: flex;
     justify-content: space-between;
     padding: 1% 5% 1% 5%;
-    height: 20%;
+    height: 10%;
+    width: 90%;
+    position: fixed;
+    background-color: rgba($color: #ffffff, $alpha: 0.7);
 }
 
 .links {
     padding-top: 1.1%;
-    font-size: 20pt;
+    font-size: 150%;
+    display: block;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
 }

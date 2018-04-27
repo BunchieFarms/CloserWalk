@@ -3,13 +3,13 @@
   <head>
     <title>Closer Walk UMC</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application' %>
   </head>
 
   <body>
     <div id="top"></div>
     <div id="dskHeader">
-      <div id="logo"><%= link_to image_tag("cwLogo.png"), root_path %></div>
+      <div id="logo"><%= link_to image_tag("cwLogo3.png"), root_path %></div>
       <div class="links"><%= link_to "Home", root_path(anchor: "top") %></div>
       <div class="links"><%= link_to "About Us", root_path(anchor: "about") %></div>
       <div class="links"><%= link_to "Our Beliefs", root_path(anchor: "beliefs") %></div>

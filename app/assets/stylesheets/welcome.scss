@@ -1,0 +1,23 @@
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;  
+  }
+  .bgimg-1 {
+    background-image: url("worshippic.jpg");
+    min-height: 628px;
+  }
+  
+  .bgimg-2 {
+    background-image: url("fieldboy.jpg");
+    min-height: 600px;
+  }
+  /*
+  .bgimg-3 {
+    background-image: url("img_parallax3.jpg");
+  }
+  */

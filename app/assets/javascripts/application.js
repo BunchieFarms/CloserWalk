@@ -13,3 +13,49 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery
+
+/*window.onload = function() {
+	burger.addEventListener("click", btnTransform);
+
+	function btnTransform() {
+		burger.classList.toggle('change');
+
+		 if (menu.classList.contains('contract')) {
+			menu.classList.remove("contract");
+			menu.classList.add("expand");
+		} else {
+			menu.classList.remove("expand");
+			menu.classList.add("contract");
+		}
+	}
+}*/
+
+window.onload = function() {
+    $(function(){
+        $('#dskHeader').data('size','big');
+    });
+
+    $(window).scroll(function(){
+        if($(document).scrollTop() > 30)
+        {
+            if($('#dskHeader').data('size') == 'big')
+            {
+                $('#dskHeader').data('size','small');
+                $('#dskHeader').stop().animate({
+                    height:'5%'
+                },300);
+            }
+        }
+        else
+        {
+            if($('#dskHeader').data('size') == 'small')
+            {
+                $('#dskHeader').data('size','big');
+                $('#dskHeader').stop().animate({
+                    height:'10%'
+                },300);
+            }  
+        }
+    });
+}
