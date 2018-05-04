@@ -43,8 +43,8 @@ window.onload = function() {
             {
                 $('#dskHeader').data('size','small');
                 $('#dskHeader').stop().animate({
-                    height:'6%'
-                },200);
+                    height:'5%'
+                },600);
             }
         }
         else
@@ -53,8 +53,8 @@ window.onload = function() {
             {
                 $('#dskHeader').data('size','big');
                 $('#dskHeader').stop().animate({
-                    height:'10%'
-                },200);
+                    height:'8%'
+                },300);
             }  
         }
     });
