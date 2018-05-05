@@ -47,6 +47,10 @@ h3 {
   color: #111;
 }
 
+#welcome {
+  font-size: 300%;
+}
+
 #serviceTimes {
   margin: 5% auto 0 auto;
   width: 45%;
@@ -111,6 +115,52 @@ h3 {
 
 .red {
   color: red;
+}
+
+#contact {
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.884);
+  padding-top: 7%;
+  padding-bottom: 3%;
+  margin-top: 7%;
+}
+
+#contact p {
+  text-align: center;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.7);
+  font-size: 300%;
+  letter-spacing: 3px;
+  margin-top: -7%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#contact input {
+  padding: 5px;
+  font-size: 150%;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  border: none;
+}
+
+#contact input[type=email] {
+  width: 25%;
+  background-color: rgb(167, 0, 0);
+  color: white;
+  text-align: center;
+}
+
+input::placeholder {
+  color: white;
+  text-align: center;
+  opacity: 0.3;
+}
+
+#contact input[type=submit] {
+  width: 15%;
+  background-color: rgba(0, 0, 0, 0.815);
+  color: white;
 }
 
 /* Turn off parallax scrolling for tablets and phones */

@@ -8,7 +8,7 @@
   <body>
     <div class="bgimg-1">
         <div class="caption">
-            <span class="border">WELCOME TO CLOSER WALK CHURCH</span>
+            <span class="border" id="welcome">WELCOME TO CLOSER WALK CHURCH</span>
             <div id="serviceTimes">
                 <div id="left">
                     <h1>JOIN US FOR UPCOMING SERVICES</h1>
@@ -34,20 +34,35 @@
         </div>
     </div>
 
-    <div class="bgimg-2">
+    <div class="bgimg-2" id="sermons">
         <div class="caption">
-            <span class="border">LATEST SERMON</span><br><br><br>
+            <span class="border">SERMONS</span><br><br><br>
             <div id="soudcloud"><iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/300451378&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>
         </div>
     </div>
 
     <div class="contentContainer">
-    
+        <div id="about">
+            <p>MEET OUR TEAM<p>
+            <div class="aboutContainer" id="buckner">
+                <div class="aboutImage"><%= image_tag 'buckner.webp' %></div>
+            <div>
+            <div class="aboutContainer" id="vaudrin">
+            <div>
+            <div class="aboutContainer" id="waddell">
+            <div>
+        <div>
     </div>
 
     <div class="bgimg-3">
         <div class="caption">
-            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+            <div id="contact">
+                <p>LEARN MORE</p>
+                <form action="#">
+                    <input type="email" placeholder="ENTER EMAIL">
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
         </div>
     </div>
 
