@@ -10,7 +10,7 @@
 
 .bgimg-1 {
   background-image: url("beachy.png");
-  min-height: 90%;
+  min-height: 100%;
 }
 
 .bgimg-2 {
@@ -26,13 +26,13 @@
 .caption {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 30%;
   width: 100%;
   text-align: center;
   color: #000;
 }
 
-.caption span.border {
+span.border {
   background-color: #111;
   color: #fff;
   padding: 18px;
@@ -45,6 +45,24 @@ h3 {
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
   color: #111;
+}
+
+#serviceTimes {
+  margin: 5% auto 0 auto;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+#left {
+  width: 40%;
+  background-color: rgba(255, 0, 0, 0.9);
+}
+
+#right {
+  width: 60%;
+  background-color: rgba(255, 0, 0, 0.6);
+  padding-top: 2%;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
