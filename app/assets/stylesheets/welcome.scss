@@ -15,12 +15,12 @@
 
 .bgimg-2 {
   background-image: url("worshippic.jpg");
-  min-height: 90%;
+  min-height: 100%;
 }
 
 .bgimg-3 {
   background-image: url("fieldboy.jpg");
-  min-height: 90%;
+  min-height: 100%;
 }
 
 .caption {
@@ -63,6 +63,54 @@ h3 {
   width: 60%;
   background-color: rgba(255, 0, 0, 0.6);
   padding-top: 2%;
+}
+
+#soundcloud {
+  z-index: -1;
+}
+
+.contentContainer {
+  width: 100%;
+}
+
+#donate {
+  margin: 0px auto;
+  width: 60%;
+  text-align: center;
+  padding: 3%;
+}
+
+#quote {
+  font-size: 300%;
+  letter-spacing: 5px;
+}
+
+#bible {
+  font-size: 125%;
+  letter-spacing: 3px;
+  margin-top: -3%;
+  margin-bottom: 3%;
+}
+
+#donate a {
+  border: 2px solid black;
+  padding: 8px;
+  font-size: 200%;
+  box-shadow: 5px 5px black;
+  text-decoration: none;
+  color: black;
+  transition: .5s;
+}
+
+#donate a:hover {
+  background-color: rgb(255, 31, 31);
+  color: white;
+  box-shadow: none;
+  box-shadow: 2px 2px black;
+}
+
+.red {
+  color: red;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
