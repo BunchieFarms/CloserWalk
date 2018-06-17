@@ -58,4 +58,21 @@ window.onload = function() {
             }  
         }
     });
+
+    burger =  document.getElementById('hamburger'); 
+	menu = document.getElementById('mobileMenu');
+
+    burger.addEventListener("click", btnTransform);
+
+    function btnTransform() {
+		burger.classList.toggle('change');
+
+		 if (menu.classList.contains('contract')) {
+			menu.classList.remove("contract");
+			menu.classList.add("expand");
+		} else {
+			menu.classList.remove("expand");
+			menu.classList.add("contract");
+        }
+    }
 }

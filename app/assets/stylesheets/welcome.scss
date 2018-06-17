@@ -146,7 +146,6 @@ h3 {
 }
 
 #contact input[type=email] {
-  width: 25%;
   background-color: rgb(167, 0, 0);
   color: white;
   text-align: center;
@@ -159,13 +158,41 @@ input::placeholder {
 }
 
 #contact input[type=submit] {
-  width: 15%;
   background-color: rgba(0, 0, 0, 0.815);
   color: white;
 }
 
+#about {
+  padding: 1%;
+}
+
 #about h1 {
   text-align: center;
+}
+
+#aboutContainer {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 200%;
+  font-weight: normal;
+}
+
+#aboutContainer a {
+  border: 2px solid black;
+  padding: 8px;
+  box-shadow: 5px 5px black;
+  text-decoration: none;
+  color: black;
+  transition: .5s;
+}
+
+#aboutContainer a:hover {
+  background-color: rgb(255, 31, 31);
+  color: white;
+  box-shadow: none;
+  box-shadow: 2px 2px black;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -173,4 +200,13 @@ input::placeholder {
   .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: scroll;
   }
+}
+
+@media screen and (min-width: 768px) {
+  #contact input[type=submit] {width: 15%;}
+  #contact input[type=email] {width: 25%;}
+}
+
+@media screen and (max-width: 769px) {
+  #welcome {line-height: 2;}
 }
