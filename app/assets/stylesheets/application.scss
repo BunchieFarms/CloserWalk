@@ -103,16 +103,20 @@ html, body {
     top: 5%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40%;
 }
 
 #mobileMenu a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
-    color: white;
+    font-size: 250%;
+    color: black;
     display: block;
     transition: 0.3s;
+}
+
+#mobileMenu a:nth-child(odd) {
+    color: red;
 }
 
 #mobileMenu a:hover, #mobileMenu a:focus {
@@ -127,6 +131,7 @@ html, body {
     background-color: white;
     z-index: 5;
     opacity: .8;
+    top: 0;
 }
 
 @media screen and (min-width: 768px) {
