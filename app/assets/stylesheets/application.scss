@@ -137,7 +137,7 @@ html, body {
 @media screen and (min-width: 768px) {
     #dskHeader {display: flex}
     html {font-size: 16px;}
-    #hamburger, #mobileMenu {display: none}
+    #hamburger, #mobileMenu, #mobileHeader {display: none}
 }
 
 @media screen and (max-width: 769px) {
