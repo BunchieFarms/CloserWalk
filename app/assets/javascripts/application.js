@@ -15,49 +15,7 @@
 //= require_tree .
 //= require jquery
 
-/*window.onload = function() {
-	burger.addEventListener("click", btnTransform);
-
-	function btnTransform() {
-		burger.classList.toggle('change');
-
-		 if (menu.classList.contains('contract')) {
-			menu.classList.remove("contract");
-			menu.classList.add("expand");
-		} else {
-			menu.classList.remove("expand");
-			menu.classList.add("contract");
-		}
-	}
-}*/
-
 window.onload = function() {
-    $(function(){
-        $('#dskHeader').data('size','big');
-    });
-
-    $(window).scroll(function(){
-        if($(document).scrollTop() > 30)
-        {
-            if($('#dskHeader').data('size') == 'big')
-            {
-                $('#dskHeader').data('size','small');
-                $('#dskHeader').stop().animate({
-                    height:'5%'
-                },600);
-            }
-        }
-        else
-        {
-            if($('#dskHeader').data('size') == 'small')
-            {
-                $('#dskHeader').data('size','big');
-                $('#dskHeader').stop().animate({
-                    height:'8%'
-                },300);
-            }  
-        }
-    });
 
     burger =  document.getElementById('hamburger'); 
 	menu = document.getElementById('mobileMenu');
@@ -75,4 +33,20 @@ window.onload = function() {
 			menu.classList.add("contract");
         }
     }
+
+    $("a").on('click', function(event) {
+        
+        if (this.hash !== "") {
+          event.preventDefault();
+    
+          var hash = this.hash;
+    
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 600, function(){
+       
+            window.location.hash = hash;
+          });
+        }
+      });
 }

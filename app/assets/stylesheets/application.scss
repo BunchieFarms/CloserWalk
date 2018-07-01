@@ -7,7 +7,7 @@ html, body {
 #dskHeader {
     justify-content: space-between;
     padding: 1% 5% 1% 5%;
-    height: 8%;
+    height: 6%;
     width: 90%;
     position: fixed;
     background-color: rgba($color: #e7e7e7, $alpha: 0.9);
@@ -132,6 +132,13 @@ html, body {
     z-index: 5;
     opacity: .8;
     top: 0;
+}
+
+#footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(201, 0, 0);
+    padding: 1% 0 1% 0;
 }
 
 @media screen and (min-width: 768px) {
